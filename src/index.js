@@ -25,7 +25,6 @@ const createIncompletelist = (text) => {
   completeButton.addEventListener("click", () => {
     deleteFromUndoList(deleteButton.parentNode);
     const addTarget = completeButton.parentNode;
-    const text = addTarget.firstElementChild.innerText;
 
     addTarget.textContent = null;
     const li = document.createElement("li");
